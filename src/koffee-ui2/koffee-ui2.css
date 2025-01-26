@@ -1,0 +1,99 @@
+/* 
+ * Koffee UI 2
+ * https://github.com/kevinhellos/koffee-ui2
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    /* font-family: "Inter Tight", sans-serif !important; */
+    overflow-x: hidden;
+    /* As there is currently no dark mode, all elements by default have a black text */
+    color: #000; 
+}
+
+/* Buttons - start */
+.kf-btn {
+    @apply
+    px-3.5 py-2 rounded-md text-sm cursor-pointer hover:opacity-80 active:opacity-100 font-medium shadow-sm w-fit
+}
+.kf-btn-plain {
+    @apply
+    kf-btn bg-slate-100 hover:bg-slate-200
+}
+.kf-btn-default {
+    @apply
+    kf-btn bg-white hover:bg-slate-100 border
+}
+.kf-btn-black {
+    @apply
+    kf-btn bg-black text-white
+}
+/* Buttons - end */
+
+/* Bar - start */
+.kf-bar {
+    @apply
+    px-3.5 py-2 text-sm rounded-sm border-l-2
+}
+.kf-bar-red {
+    @apply
+    kf-bar bg-red-100/75 text-red-800 border-red-800
+}
+.kf-bar-green {
+    @apply
+    kf-bar bg-green-100/75 text-green-800 border-green-800
+}
+.kf-bar-blue {
+    @apply
+    kf-bar bg-blue-100/75 text-blue-800 border-blue-800
+}
+.kf-bar-yellow {
+    @apply
+    kf-bar bg-yellow-100/75 text-yellow-800 border-yellow-800
+}
+/* Bar - end */
+
+/* Card - start */
+.kf-card {
+    @apply
+    px-3.5 py-2 border rounded-md shadow-sm
+}
+.kf-card-title {
+    @apply
+    text-lg font-medium
+}
+.kf-card-content {
+    @apply
+    text-sm
+}
+/* Card - end */
+
+/* Dialog - start */
+/* Dialog */
+::backdrop {
+    backdrop-filter: blur(2.5px) !important;
+}
+/* Dialog - end */
+.kf-dialog {
+    @apply
+    rounded-md p-7 max-w-xl text-sm
+}
+.kf-dialog-title {
+    @apply
+    text-lg font-medium
+}
+
+/* Chip - start */
+.kf-chip {
+    @apply
+    px-3.5 py-1 text-sm border rounded-full shadow-sm
+}
+/* Chip - end */
+
+/* Link - start */
+.kf-link {
+    @apply
+    cursor-pointer hover:underline
+}
+/* Link - end */

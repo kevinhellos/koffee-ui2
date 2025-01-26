@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  background-color: #fff;
+  background-image: 
+    linear-gradient(#efefef 1.1px, transparent 1.1px), 
+    linear-gradient(to right, #f3f3f3 1.1px, #fff 1.1px);
+  background-size: 150px 150px;
+  min-height: 100vh;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +27,4 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
