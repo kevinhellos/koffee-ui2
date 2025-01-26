@@ -64,8 +64,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/dialog" className="mt-10 kf-btn-default block mb-10">
-          Next: Dialog
+        <Link href="/components/chips" className="mt-10 kf-btn-default block mb-10">
+          Next: Chips
         </Link>
 
       </div>

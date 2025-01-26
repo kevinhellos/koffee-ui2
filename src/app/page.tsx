@@ -1,3 +1,4 @@
+import { kfVersion } from "@/data";
 import { Github } from "lucide-react";
 import Link from "next/link";
 
@@ -6,11 +7,11 @@ export default function Home() {
     <>
       <div className="text-center mt-[15vh]">
 
-        <span className="kf-chip">
-          version 0.0.1
+        <span className="kf-chip-default">
+          version {kfVersion}
         </span>
 
-        <h1 className="text-4xl font-semibold mt-5">
+        <h1 className="text-5xl font-semibold mt-5">
           Minimalist UI library
         </h1>
         <p className="mt-5 mb-5">

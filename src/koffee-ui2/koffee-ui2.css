@@ -34,7 +34,7 @@ body {
 /* Bar - start */
 .kf-bar {
     @apply
-    px-3.5 py-2 text-sm rounded-sm border-l-2
+    px-3.5 py-3 text-sm rounded-sm border-l-2
 }
 .kf-bar-red {
     @apply
@@ -51,6 +51,10 @@ body {
 .kf-bar-yellow {
     @apply
     kf-bar bg-yellow-100/75 text-yellow-800 border-yellow-800
+}
+.kf-bar-purple {
+    @apply
+    kf-bar bg-purple-100/75 text-purple-800 border-purple-800
 }
 /* Bar - end */
 
@@ -87,7 +91,19 @@ body {
 /* Chip - start */
 .kf-chip {
     @apply
-    px-3.5 py-1 text-sm border rounded-full shadow-sm
+    px-3.5 py-1 text-sm rounded-full shadow-sm
+}
+.kf-chip-default {
+    @apply
+    kf-chip border
+}
+.kf-chip-black {
+    @apply
+    kf-chip bg-black text-white
+}
+.kf-chip-red {
+    @apply
+    kf-chip text-red-700 border border-red-700
 }
 /* Chip - end */
 
@@ -97,3 +113,59 @@ body {
     cursor-pointer hover:underline
 }
 /* Link - end */
+
+/* Input - start */
+.kf-input {
+    @apply
+    px-3.5 py-3 text-sm rounded-md border hover:bg-slate-50
+}
+/* Input - end */
+
+/* Pagination - start */
+.kf-pagination {
+    @apply
+    flex
+}
+.kf-pagination button {
+    @apply
+    rounded-none border-r-0
+}
+.kf-pagination > button:nth-of-type(1) {
+    @apply
+    rounded-l-md
+}
+.kf-pagination button:last-of-type {
+    @apply
+    rounded-r-md border
+}
+.kf-page-active {
+    @apply
+    bg-black text-white hover:bg-black
+}
+/* Pagination - end */
+
+/* Toggle - start */
+.kf-toggle {
+    @apply
+    relative inline-flex items-center cursor-pointer
+}
+.kf-toggle input {
+    @apply
+    sr-only border
+}
+.kf-toggle div {
+    @apply
+    rounded-full outline-none duration-100 after:duration-500 w-16 h-8 bg-slate-200 after:absolute after:outline-none after:rounded-full after:h-6 after:w-6 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center after:font-bold
+}
+/* Toggle - end */
+
+/* Upload File - start */
+.kf-file label{
+    @apply
+    kf-btn-default
+}
+.kf-file input {
+    @apply
+    hidden
+}
+/* Upload File - end */

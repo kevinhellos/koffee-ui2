@@ -1,6 +1,5 @@
-// import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next"
-import Bar from "@/koffee-ui2/components/Bar";
 import Pageclient from "./page.client";
 import { Lightbulb } from "lucide-react";
  
@@ -20,13 +19,14 @@ export default function page() {
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
 
-        <Bar variant="blue" className="mb-5">
+        <div className="kf-bar-blue mb-5">
           <span className="font-medium flex"><Lightbulb size={18} className="me-2 mb-3"/>Note:</span>
           <ul className="list-disc ms-5">
             <li>JavaScript is required to trigger Dialog</li>
-            <li>For Next JS, the <span className="font-medium">{`"use client"`}</span> directive will be required as this needs to be a client component</li>
+            <li>For Next JS, the <span className="font-medium">{`"use client"`}</span> 
+            {" "}directive will be required as this needs to be a client component</li>
           </ul>
-        </Bar>
+        </div>
 
         <div className="mockup-code rounded-md bg-black mb-10">
 
@@ -81,7 +81,12 @@ export default function page() {
             <span className="text-red-400">{"dialog   "}</span>
             <span className="text-yellow-400">{"className"}</span>
             <span className="text-white">{"="}</span>
-            <span className="text-green-400">{`"kf-dialog"`}</span>
+            <span className="text-green-400">{`"kf-dialog"  `}</span>
+            <span className="text-yellow-400">{"ref"}</span>
+            <span className="text-white">{"="}</span>
+            <span className="text-blue-400">{"{"}</span>
+            <span className="text-white">{"dialogRef"}</span>
+            <span className="text-blue-400">{"}"}</span>
             <span className="text-white">{">"}</span>
             <br />
 
@@ -102,6 +107,7 @@ export default function page() {
               <span className="text-yellow-400">{"className"}</span>
               <span className="text-white">{"="}</span>
               <span className="text-green-400">{`"mb-5"`}</span>
+
               <span className="text-white">{">"}</span>
               <span className="text-white">{"Lorem ipsum dolor sit amet consectetur adipisicing elit..."}</span>
               <span className="text-white">{"</"}</span>
@@ -117,9 +123,9 @@ export default function page() {
 
         </div>
 
-        {/* <Link href="/components/" className="mt-10 kf-btn-default block mb-10">
-          Next:
-        </Link> */}
+        <Link href="/components/inputs" className="mt-10 kf-btn-default block mb-10">
+          Next: Inputs
+        </Link>
 
       </div>
     )

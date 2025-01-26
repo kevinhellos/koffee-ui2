@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../koffee-ui2/koffee-ui2.css"; // Include link to Koffee UI2 CSS
 import Navbar from "@/components/Navbar";
-import Bar from "@/koffee-ui2/components/Bar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -28,13 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body className="antialiased">
-        <Bar 
-          variant={"blue"}
-          className="text-center"
-        >
+        <div className="kf-bar-purple text-center">
           Koffee UI2 is currently still in development (as of Jan 26 2025)
-        </Bar>
-
+        </div>
         <Navbar/>
         {children}
       </body>
