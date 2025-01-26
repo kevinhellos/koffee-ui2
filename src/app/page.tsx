@@ -1,6 +1,20 @@
 import { kfVersion } from "@/data";
 import { Github } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Koffee UI 2",
+  description: "Lightweight UI framework designed to streamline development of modern web interfaces",
+  openGraph: {
+    images: [{
+      url: "/assets/imgs/og.png",
+      width: 1200,
+      height: 630,
+      alt: "OG image"
+    }]
+  }
+}
 
 export default function Home() {
   return (
