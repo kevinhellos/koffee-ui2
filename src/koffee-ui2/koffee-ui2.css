@@ -17,7 +17,8 @@ body {
 /* Buttons - start */
 .kf-btn {
     @apply
-    px-3.5 py-2 rounded-md text-sm cursor-pointer hover:opacity-80 active:opacity-100 font-medium shadow-sm w-fit
+    px-3.5 py-2 rounded-md text-sm cursor-pointer hover:opacity-80 
+    active:opacity-100 font-medium shadow-sm w-fit
 }
 .kf-btn-plain {
     @apply
@@ -141,7 +142,8 @@ body {
 /* Input - start */
 .kf-input {
     @apply
-    appearance-none px-3.5 py-3 text-sm rounded-md border hover:bg-slate-50 shadow-md cursor-pointer
+    appearance-none px-3.5 py-3 text-sm rounded-md border
+    hover:bg-slate-50 shadow-md cursor-pointer
 }
 /* Input - end */
 
@@ -179,8 +181,10 @@ body {
 }
 .kf-toggle div {
     @apply
-    rounded-full outline-none duration-100 after:duration-500 w-16 h-8 bg-slate-200 after:absolute after:outline-none 
-    after:rounded-full after:h-6 after:w-6 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center after:font-bold
+    rounded-full w-16 h-8 bg-gray-300 duration-100 after:duration-300
+    after:absolute after:outline-none after:rounded-full 
+    after:h-6 after:w-6 after:bg-white after:top-1 after:left-1 
+    after:flex after:justify-center after:items-center after:font-bold
 }
 /* Toggle - end */
 
