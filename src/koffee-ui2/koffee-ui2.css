@@ -12,13 +12,6 @@ body {
     color: #000; 
 }
 
-/* Border - start */
-.border {
-    @apply
-    border-gray-200;
-}
-/* Border - end */
-
 /* Buttons - start */
 .kf-btn {
     @apply
@@ -146,13 +139,13 @@ body {
     @apply
     border p-7 shadow-sm rounded-sm
 }
-.kf-form input{
-    @apply
-    kf-input
-}
 .kf-form-error {
     @apply
     border border-red-700
+}
+.kf-form input{
+    @apply
+    kf-input
 }
 .kf-form-validation {
     @apply
