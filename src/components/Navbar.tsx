@@ -15,7 +15,15 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className="px-3 menu-horizontal gap-3">
                     <li>
-                        <Link className="kf-link" href="/components">Components</Link>
+                        <div className="kf-dropdown">
+                            <button type="button">More</button>
+                            <div className="kf-dropdown-content">
+                                <Link className="kf-link" href="/components">Components</Link>
+                                <a href="https://github.com/kevinhellos/koffee-ui2" target="_blank" className="kf-link">
+                                    Github
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     {/* <li><a className="kf-link">Releases</a></li> */}
                     <li>

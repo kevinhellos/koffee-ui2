@@ -19,6 +19,7 @@ export default function page() {
         </span>
           <ul className="list-disc ms-5">
             <li>Select component is curently in experimental mode</li>
+            <li>Select component relies heavily on Javascript</li>
           </ul>
         </div>
 

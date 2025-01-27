@@ -284,7 +284,7 @@ body {
 }
 .kf-select-btn {
     @apply
-    kf-btn-default
+    kf-btn-default min-w-36 text-left
 }
 .kf-select-option{
     @apply
