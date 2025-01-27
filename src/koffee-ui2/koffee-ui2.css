@@ -132,13 +132,6 @@ body {
 }
 /* Chip - end */
 
-/* Link - start */
-.kf-link {
-    @apply
-    cursor-pointer hover:underline
-}
-/* Link - end */
-
 /* Input - start */
 .kf-input {
     @apply
@@ -146,6 +139,21 @@ body {
     hover:bg-slate-50 shadow-md cursor-pointer
 }
 /* Input - end */
+
+/* Link - start */
+.kf-link {
+    @apply
+    cursor-pointer hover:underline px-3.5 py-2
+}
+.kf-link-default {
+    @apply
+    kf-link
+}
+.kf-link-plain {
+    @apply
+    hover:bg-slate-100 px-3.5 py-2 rounded-md
+}
+/* Link - end */
 
 /* Pagination - start */
 .kf-pagination {

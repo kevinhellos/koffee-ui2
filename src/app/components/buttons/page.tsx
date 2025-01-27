@@ -13,6 +13,7 @@ export default function page() {
         <p className="mb-3">Variant:</p>
 
         <div className="flex gap-3">
+          <button className="kf-btn">Unstyled</button>
           <button className="kf-btn-plain">Plain</button>
           <button className="kf-btn-default">Default</button>
           <button className="kf-btn-black">Black</button>
@@ -21,6 +22,23 @@ export default function page() {
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
         <div className="mockup-code rounded-md bg-black">
+
+          <code className="px-5 text-gray-400 text-sm block">
+            {`<!-- Button Unstyled (for custom styling) -->`}
+          </code>
+          <code className="px-5 text-sm block">
+            <span className="text-white">{"<"}</span>
+            <span className="text-red-400">{"button   "}</span>
+            <span className="text-yellow-400">{"className"}</span>
+            <span className="text-white">{"="}</span>
+            <span className="text-green-400">{`"kf-btn"`}</span>
+            <span className="text-white">{">"}</span>
+            <span className="text-white">{"Unstyled"}</span>
+            <span className="text-white">{"</"}</span>
+            <span className="text-red-400">{"button"}</span>
+            <span className="text-white">{">"}</span>
+          </code>
+          <br />
 
           <code className="px-5 text-gray-400 text-sm block">
             {`<!-- Button Plain -->`}

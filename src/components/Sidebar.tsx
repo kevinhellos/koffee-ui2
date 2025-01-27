@@ -8,7 +8,7 @@ export default function Sidebar({ index, name, href, js} : { index: number, name
   const pathname = usePathname();
 
   return (
-    <li className={`px-3 py-2 ${pathname === "/components/"+ name.toLocaleLowerCase() ? "bg-slate-100 rounded-sm font-medium" : ""} `} key={index}>
+    <li className={`px-3 py-2 ${pathname === "/components/"+ name.toLocaleLowerCase() ? "bg-slate-100 rounded-sm font-medium border-l-2 border-black" : ""} `} key={index}>
       <Link className="w-full kf-link" href={href}>
         {name}
       </Link>

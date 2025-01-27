@@ -42,6 +42,11 @@ export const components = [
         js: false
     },
     {
+        name: "Links",
+        href: "/components/links",
+        js: false
+    },
+    {
         name: "Pagination",
         href: "/components/pagination",
         js: false
