@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next"
 import Pageclient from "./page.client";
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, NotebookPen } from "lucide-react";
  
 export const metadata: Metadata = {
   title: "Components | Dialog",
@@ -12,7 +12,7 @@ export default function page() {
     return (
       <div className="mt-5">
         <h1 className="text-4xl font-semibold mb-5">Dialog</h1>
-        <p className="mb-3">Dialof (also known as Modal) component only comes in 1 variant</p>
+        <p className="mb-3">Dialog (also known as Modal) component only comes in 1 variant</p>
 
         <Pageclient/>
 
@@ -20,7 +20,7 @@ export default function page() {
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
 
         <div className="kf-bar-blue mb-5">
-          <span className="font-medium flex"><Lightbulb size={18} className="me-2 mb-3"/>Note:</span>
+          <span className="font-medium flex"><NotebookPen size={18} className="me-2 mb-3"/>Note:</span>
           <ul className="list-disc ms-5">
             <li>JavaScript is required to trigger Dialog</li>
             <li>For Next JS, the <span className="font-medium">{`"use client"`}</span> 
@@ -123,8 +123,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/inputs" className="mt-10 kf-btn-default block mb-10">
-          Next: Inputs
+        <Link href="/components/dropdown" className="mt-10 kf-btn-default block mb-10">
+          Next: Dropdown
         </Link>
 
       </div>

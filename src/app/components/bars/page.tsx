@@ -17,6 +17,7 @@ export default function page() {
           <div className="kf-bar-green w-full mb-3">This is a red bar</div>
           <div className="kf-bar-blue w-full mb-3">This is a red bar</div>
           <div className="kf-bar-yellow w-full mb-3">This is a red bar</div>
+          <div className="kf-bar-purple w-full mb-3">This is a purple bar</div>
         </div>
 
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
@@ -82,6 +83,22 @@ export default function page() {
             <span className="text-green-400">{`"kf-bar-yellow"`}</span>
             <span className="text-white">{">"}</span>
             <span className="text-white">{"This is a yellow bar"}</span>
+            <span className="text-white">{"</"}</span>
+            <span className="text-red-400">{"div"}</span>
+            <span className="text-white">{">"}</span>
+          </code>
+
+          <code className="px-5 text-gray-400 text-sm block mt-5">
+            {`<!-- Bar purple -->`}
+          </code>
+          <code className="px-5 text-sm block">
+            <span className="text-white">{"<"}</span>
+            <span className="text-red-400">{"div   "}</span>
+            <span className="text-yellow-400">{"className"}</span>
+            <span className="text-white">{"="}</span>
+            <span className="text-green-400">{`"kf-bar-purple"`}</span>
+            <span className="text-white">{">"}</span>
+            <span className="text-white">{"This is a purple bar"}</span>
             <span className="text-white">{"</"}</span>
             <span className="text-red-400">{"div"}</span>
             <span className="text-white">{">"}</span>

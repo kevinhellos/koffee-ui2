@@ -1,3 +1,4 @@
+import { kfVersion } from "@/data";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -7,6 +8,9 @@ const Navbar = () => {
                 <Link href="/" className="text-2xl font-semibold">
                     Koffee UI 2
                 </Link>
+                <div className="block text-xs ms-3 text-gray-500">
+                    V {kfVersion}
+                </div>
             </div>
             <div className="flex-none">
                 <ul className="px-3 menu-horizontal gap-3">

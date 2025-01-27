@@ -32,6 +32,11 @@ export const components = [
         js: true
     },
     {
+        name: "Dropdown",
+        href: "/components/dropdown",
+        js: false
+    },
+    {
         name: "Inputs",
         href: "/components/inputs",
         js: false
