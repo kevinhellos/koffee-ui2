@@ -64,8 +64,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/card" className="mt-10 kf-btn-default block mb-10">
-          Next: Card
+        <Link href="/components/pagination" className="mt-10 kf-btn-default block mb-10">
+          Next: Pagination
         </Link>
 
       </div>

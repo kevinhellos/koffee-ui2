@@ -72,8 +72,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/dialog" className="mt-10 kf-btn-default block mb-10">
-          Next: Dialog
+        <Link href="/components/collapsible" className="mt-10 kf-btn-default block mb-10">
+          Next: Collapsible
         </Link>
 
       </div>

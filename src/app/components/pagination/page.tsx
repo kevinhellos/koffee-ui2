@@ -114,10 +114,10 @@ export default function page() {
       </div>
 
       <Link
-        href="/components/toggle"
+        href="/components/pin-input"
         className="mt-10 kf-btn-default block mb-10"
       >
-        Next: Toggle
+        Next: Pin input
       </Link>
     </div>
   );

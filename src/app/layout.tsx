@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body className="antialiased">
-        <div className="kf-bar-purple text-center">
+        {/* <div className="kf-bar-purple text-center">
           Koffee UI2 is currently still in development (as of Jan 26 2025)
-        </div>
+        </div> */}
         <Navbar/>
         {children}
       </body>

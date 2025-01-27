@@ -61,8 +61,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/pagination" className="mt-10 kf-btn-default block mb-10">
-          Next: Pagination
+        <Link href="/components/links" className="mt-10 kf-btn-default block mb-10">
+          Next: Links
         </Link>
 
       </div>

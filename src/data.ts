@@ -27,6 +27,16 @@ export const components = [
         js: false
     },
     {
+        name: "Collapsible",
+        href: "/components/collapsible",
+        js: true
+    },
+    {
+        name: "Colors",
+        href: "/components/colors",
+        js: false
+    },
+    {
         name: "Dialog",
         href: "/components/dialog",
         js: true
@@ -49,6 +59,16 @@ export const components = [
     {
         name: "Pagination",
         href: "/components/pagination",
+        js: false
+    },
+    {
+        name: "Pin-input",
+        href: "/components/pin-input",
+        js: false
+    },
+    {
+        name: "Radio",
+        href: "/components/radio",
         js: false
     },
     {

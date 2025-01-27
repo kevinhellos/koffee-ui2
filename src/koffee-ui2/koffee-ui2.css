@@ -5,8 +5,6 @@
  * Updated as of Jan 27 2025
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     /* font-family: "Inter Tight", sans-serif !important; */
     /* overflow-x: hidden; */
@@ -76,6 +74,29 @@ body {
 }
 /* Card - end */
 
+/* Colors - start */
+.kf-bg-red {
+    @apply
+    bg-red-100/75
+}
+.kf-bg-green {
+    @apply
+    bg-green-100/75
+}
+.kf-bg-blue {
+    @apply
+    bg-blue-100/75
+}
+.kf-bg-yellow {
+    @apply
+    bg-yellow-100/75
+}
+.kf-bg-purple {
+    @apply
+    bg-purple-100/75
+}
+/* Colors - end */
+
 /* Dialog - start */
 /* Dialog */
 ::backdrop {
@@ -113,7 +134,7 @@ body {
 }
 /* Dropdown - end */
 
-/* Chip - start */
+/* Chips - start */
 .kf-chip {
     @apply
     px-3.5 py-1 text-sm rounded-full shadow-sm
@@ -130,7 +151,26 @@ body {
     @apply
     kf-chip text-red-700 border border-red-700
 }
-/* Chip - end */
+/* Chips - end */
+
+/* Collapsible - start */
+.kf-collapsible {
+    @apply
+    px-0 py-0 border rounded-sm cursor-pointer shadow-sm
+}
+.kf-collapsible-header {
+    @apply
+    px-3.5 py-2 hover:bg-slate-50 active:bg-slate-100 font-medium
+}
+.kf-collapsible-body {
+    @apply
+    px-3.5 py-2 border bg-white rounded-sm cursor-pointer border-l-0 border-r-0 border-b-0 hidden
+}
+.kf-collapsible-active {
+    @apply
+    block relative
+}
+/* Collapsible - end */
 
 /* Input - start */
 .kf-input {
@@ -151,7 +191,7 @@ body {
 }
 .kf-link-plain {
     @apply
-    hover:bg-slate-100 px-3.5 py-2 rounded-md
+    hover:bg-slate-50 px-3.5 py-2 rounded-md
 }
 /* Link - end */
 
@@ -177,6 +217,46 @@ body {
     bg-black text-white hover:bg-black
 }
 /* Pagination - end */
+
+/* Pin input - start */
+.kf-pin-input {
+    @apply
+    flex gap-3
+}
+.kf-pin-input input {
+    @apply
+    appearance-none  text-lg rounded-md border
+    hover:bg-slate-50 shadow-md cursor-pointer h-12 w-12 text-center
+}
+/* Pin input - start */
+
+/* Radio - start */
+.kf-radio-group div {
+    @apply
+    flex mt-1 shadow-sm w-fit
+}
+.kf-radio-group input[type="radio"] {
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(100%) !important;
+}
+.kf-radio-group input[type="radio"] {
+    @apply
+    overflow-hidden absolute whitespace-nowrap 
+}
+
+.kf-radio-group input[type="radio"]:checked + span {
+  /* box-shadow: 0 0 0 0.0625em #0043ed; */
+  @apply bg-black text-white border
+}
+
+.kf-radio-label span {
+    @apply
+    block cursor-pointer bg-white relative border px-3.5 py-2 hover:bg-slate-50
+}
+.kf-radio-label span {
+    transition: background-color .3s ease !important;
+}
+/* Radio - end */
 
 /* Toggle - start */
 .kf-toggle {
