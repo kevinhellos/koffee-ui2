@@ -97,8 +97,8 @@ export default function page() {
 
         </div>
 
-        <Link href="/components/inputs" className="mt-10 kf-btn-default block mb-10">
-          Next: Inputs
+        <Link href="/components/form" className="mt-10 kf-btn-default block mb-10">
+          Next: Form
         </Link>
 
       </div>

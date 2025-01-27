@@ -5,11 +5,11 @@ const Navbar = () => {
     return (
         <div className="navbar px-5 border-b">
             <div className="flex-1">
-                <Link href="/" className="text-2xl font-semibold">
+                <Link href="/" className="lg:text-2xl text-lg font-semibold">
                     Koffee UI 2
                 </Link>
-                <div className="block text-xs ms-3 text-gray-500">
-                    V {kfVersion}
+                <div className="lg:block text-xs ms-3 text-gray-500 sm:hidden">
+                    V{kfVersion}
                 </div>
             </div>
             <div className="flex-none">

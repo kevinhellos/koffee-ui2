@@ -187,10 +187,10 @@ export default function page() {
       </div>
 
       <Link
-        href="/components/toggle"
+        href="/components/select"
         className="mt-10 kf-btn-default block mb-10"
       >
-        Next: Toggle
+        Next: Select
       </Link>
     </div>
   );

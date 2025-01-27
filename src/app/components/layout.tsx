@@ -32,6 +32,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
                             name={c.name}
                             href={c.href}
                             js={c.js}
+                            experimental={c.experimental}
                         />
                     ))}
                 </ul>

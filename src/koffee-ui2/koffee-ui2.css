@@ -12,6 +12,13 @@ body {
     color: #000; 
 }
 
+/* Border - start */
+.border {
+    @apply
+    border-gray-200;
+}
+/* Border - end */
+
 /* Buttons - start */
 .kf-btn {
     @apply
@@ -134,6 +141,25 @@ body {
 }
 /* Dropdown - end */
 
+/* Form - start */
+.kf-form {
+    @apply
+    border p-7 shadow-sm rounded-sm
+}
+.kf-form input{
+    @apply
+    kf-input
+}
+.kf-form-error {
+    @apply
+    border border-red-700
+}
+.kf-form-validation {
+    @apply
+    text-red-700 text-sm block
+}
+/* Form - end */
+
 /* Chips - start */
 .kf-chip {
     @apply
@@ -175,8 +201,8 @@ body {
 /* Input - start */
 .kf-input {
     @apply
-    appearance-none px-3.5 py-3 text-sm rounded-md border
-    hover:bg-slate-50 shadow-md cursor-pointer
+    appearance-none px-3.5 py-2 text-sm rounded-md border
+    hover:bg-slate-50 shadow-sm cursor-pointer
 }
 /* Input - end */
 
@@ -226,7 +252,7 @@ body {
 .kf-pin-input input {
     @apply
     appearance-none  text-lg rounded-md border
-    hover:bg-slate-50 shadow-md cursor-pointer h-12 w-12 text-center
+    hover:bg-slate-50 shadow-sm cursor-pointer h-12 w-12 text-center
 }
 /* Pin input - start */
 
@@ -257,6 +283,32 @@ body {
     transition: background-color .3s ease !important;
 }
 /* Radio - end */
+
+/* Select (experimental) - start */
+.kf-select {
+    @apply
+    relative inline
+}
+.kf-select-btn {
+    @apply
+    kf-btn-default
+}
+.kf-select-option{
+    @apply
+    hidden z-[1] absolute bg-white border rounded-md shadow-md cursor-pointer
+}
+.kf-select-option a {
+    @apply
+    px-3.5 py-2 hover:bg-slate-50  hover:rounded-md min-w-36 block text-sm
+}
+.kf-select-show {
+    @apply
+    block
+}
+/* .kf-select:hover .kf-select-option{
+    display: block;
+} */
+/* Select (experimental) - end */
 
 /* Toggle - start */
 .kf-toggle {
