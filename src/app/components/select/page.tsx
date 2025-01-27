@@ -30,7 +30,7 @@ export default function page() {
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
 
-        <a href="" className="kf-btn-black" target="_blank">
+        <a href="https://github.com/kevinhellos/koffee-ui2/blob/main/experimental/select.md" className="kf-btn-black" target="_blank">
           View codes in Github
         </a>
 
