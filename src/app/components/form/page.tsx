@@ -35,7 +35,7 @@ export default function page() {
             <span className="text-red-400">{"form   "}</span>
             <span className="text-yellow-400">{"className"}</span>
             <span className="text-white">{"="}</span>
-            <span className="text-green-400">{`"kf-form max-w-m"`}</span>
+            <span className="text-green-400">{`"kf-form max-w-md"`}</span>
             <span className="text-white">{">"}</span>
             <br />
 
