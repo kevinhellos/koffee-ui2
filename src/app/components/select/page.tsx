@@ -31,10 +31,14 @@ export default function page() {
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
 
-        <a href="https://github.com/kevinhellos/koffee-ui2/blob/main/experimental/select.md" className="kf-btn-black" target="_blank">
-          View codes in Github
-        </a>
-
+        <button className="kf-btn-black">
+          <Link 
+            href="https://github.com/kevinhellos/koffee-ui2/blob/main/experimental/select.md" 
+            target="_blank"
+          >
+            View codes in Github
+          </Link>
+        </button>
 
         <Link href="/components/form" className="mt-10 kf-btn-default block mb-10">
           Next: Form
