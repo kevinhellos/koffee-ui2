@@ -8,6 +8,12 @@ export const components = [
         experimental: false
     },
     {
+        name: "Get-started",
+        href: "/components/get-started",
+        js: false,
+        experimental: false
+    },
+    {
         name: "Bars",
         href: "/components/bars",
         js: false,

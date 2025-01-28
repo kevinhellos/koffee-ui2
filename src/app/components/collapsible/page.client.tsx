@@ -8,7 +8,7 @@ export default function Pageclient() {
 
     return (
     <>
-        <div className="kf-collapsible">
+        <div className="kf-collapsible mb-5">
             <div className="kf-collapsible-header"
                 onClick={() => setIsActive(!isActive)}
             >
@@ -20,6 +20,7 @@ export default function Pageclient() {
                 ullam mollitia.
             </div>
         </div>
+
     </>
     );
 }
