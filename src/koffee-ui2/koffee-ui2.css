@@ -12,26 +12,6 @@ body {
     color: #000; 
 }
 
-/* Buttons - start */
-.kf-btn {
-    @apply
-    px-3.5 py-2 rounded-md text-sm cursor-pointer hover:opacity-80 
-    active:opacity-100 font-medium shadow-sm w-fit
-}
-.kf-btn-plain {
-    @apply
-    kf-btn bg-slate-100 hover:bg-slate-200
-}
-.kf-btn-default {
-    @apply
-    kf-btn bg-white hover:bg-slate-100 border
-}
-.kf-btn-black {
-    @apply
-    kf-btn bg-black text-white
-}
-/* Buttons - end */
-
 /* Bar - start */
 .kf-bar {
     @apply
@@ -59,10 +39,30 @@ body {
 }
 /* Bar - end */
 
+/* Buttons - start */
+.kf-btn {
+    @apply
+    px-3.5 py-2 rounded-sm text-sm cursor-pointer hover:opacity-80 
+    active:opacity-100 font-medium shadow-sm w-fit
+}
+.kf-btn-plain {
+    @apply
+    kf-btn bg-slate-100 hover:bg-slate-200
+}
+.kf-btn-default {
+    @apply
+    kf-btn bg-white hover:bg-slate-100 border
+}
+.kf-btn-black {
+    @apply
+    kf-btn bg-black text-white
+}
+/* Buttons - end */
+
 /* Card - start */
 .kf-card {
     @apply
-    px-3.5 py-2 border rounded-md shadow-sm
+    px-3.5 py-2 border rounded-sm shadow-sm
 }
 .kf-card-title {
     @apply
@@ -104,7 +104,7 @@ body {
 }
 .kf-dialog {
     @apply
-    rounded-md p-7 max-w-xl text-sm
+    rounded-sm p-7 max-w-xl text-sm
 }
 .kf-dialog-title {
     @apply
@@ -123,11 +123,11 @@ body {
 }
 .kf-dropdown-content {
     @apply
-    hidden z-[1] absolute bg-white border rounded-md shadow-md
+    hidden z-[1] absolute bg-white border rounded-sm shadow-md
 }
 .kf-dropdown-content a {
     @apply
-    px-3.5 py-2 hover:bg-slate-50  hover:rounded-md min-w-36 block text-sm
+    px-3.5 py-2 hover:bg-slate-50  hover:rounded-sm min-w-36 block text-sm
 }
 .kf-dropdown:hover .kf-dropdown-content {
     display: block;
@@ -194,7 +194,7 @@ body {
 /* Input - start */
 .kf-input {
     @apply
-    appearance-none px-3.5 py-2 text-sm rounded-md border
+    appearance-none px-3.5 py-2 text-sm rounded-sm border
     hover:bg-slate-50 shadow-sm cursor-pointer
 }
 /* Input - end */
@@ -210,7 +210,7 @@ body {
 }
 .kf-link-plain {
     @apply
-    hover:bg-slate-50 px-3.5 py-2 rounded-md
+    hover:bg-slate-50 px-3.5 py-2 rounded-sm
 }
 /* Link - end */
 
@@ -225,11 +225,11 @@ body {
 }
 .kf-pagination > button:nth-of-type(1) {
     @apply
-    rounded-l-md
+    rounded-l-sm
 }
 .kf-pagination button:last-of-type {
     @apply
-    rounded-r-md border
+    rounded-r-sm border
 }
 .kf-page-active {
     @apply
@@ -244,8 +244,8 @@ body {
 }
 .kf-pin-input input {
     @apply
-    appearance-none  text-lg rounded-md border
-    hover:bg-slate-50 shadow-sm cursor-pointer h-12 w-12 text-center
+    appearance-none  text-lg rounded-sm border
+    hover:bg-slate-50 shadow-sm cursor-pointer h-10 w-10 text-center
 }
 /* Pin input - start */
 
@@ -288,11 +288,11 @@ body {
 }
 .kf-select-option{
     @apply
-    hidden z-[1] absolute bg-white border rounded-md shadow-md cursor-pointer
+    hidden z-[1] absolute bg-white border rounded-sm shadow-md cursor-pointer
 }
 .kf-select-option a {
     @apply
-    px-3.5 py-2 hover:bg-slate-50  hover:rounded-md min-w-36 block text-sm
+    px-3.5 py-2 hover:bg-slate-50  hover:rounded-sm min-w-36 block text-sm
 }
 .kf-select-show {
     @apply

@@ -3,7 +3,7 @@ export const kfVersion = "0.0.1";
 export const components = [
     {
         name: "Overview",
-        href: "/components",
+        href: "/components/overview",
         js: false,
         experimental: false
     },
