@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Pageclient() {
+export default function ExperimentalSelect({ options } : { options: string[] }) {
 
     const [isSelected, setIsSelected] = useState<boolean>(false);
     const [selected, setSelected] = useState<string>("");
@@ -17,15 +17,13 @@ export default function Pageclient() {
                     {selected ? selected : "Choose an option"}
                 </button>
                 <div className={`kf-select-option ${isSelected ? "kf-select-show" : ""}`}>
-                    <a onClick={() => { setSelected("Option 1"); setIsSelected(false)}}>
-                        Option 1
-                    </a>
-                    <a onClick={() => { setSelected("Option 2"); setIsSelected(false)}}>
-                        Option 2
-                    </a>
-                    <a onClick={() => { setSelected("Option 3"); setIsSelected(false)}}>
-                        Option 3
-                    </a>
+                    {options.map((_, index) => (
+                        <a 
+                            onClick={() => { setSelected(options[index]); setIsSelected(false)}}
+                            key={index}>
+                            {options[index]}
+                        </a>
+                    ))}
                 </div>
             </div>
 

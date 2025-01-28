@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next"
 import { FlaskConical } from "lucide-react";
-import Pageclient from "./page.client";
+import ExperimentalSelect from "./page.client";
  
 export const metadata: Metadata = {
   title: "Components | Select",
@@ -26,7 +26,9 @@ export default function page() {
         <h1 className="text-4xl font-semibold mb-5">Select</h1>
         <p className="mb-3">Select component only comes in 1 variant</p>
 
-        <Pageclient/>
+        <ExperimentalSelect
+          options={["Option 1", "Option 2", "Option 3"]}
+        />
 
         <h2 className="text-2xl font-semibold mt-5">Usage</h2>
         <span className="block text-sm text-gray-500 mb-5">Note: ensure Tailwind CSS has been setup</span>
